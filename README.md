@@ -1,101 +1,92 @@
-<!--START_SECTION:header-->
-<div align="center">
-  <p align="center">
-    <img 
-      alt="DIO Education" 
-      src="https://raw.githubusercontent.com/digitalinnovationone/template-github-trilha/main/.github/assets/logo.webp" 
-      width="100px" 
-    />
-    <h1>barber-shop-ui</h1>
-  </p>
-</div>
-<!--END_SECTION:header-->
-
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=DIO&message=Education&color=E94D5F&labelColor=202024" alt="DIO Project" />
-  <a href="NIVEL"><img  src="https://img.shields.io/static/v1?label=Nivel&message=Basico&color=E94D5F&labelColor=202024" alt="Nivel"></a>
-
-</p>
-
-<!--  -->
-<table align="center">
-<thead>
-  <tr>
-    <td>
-        <p align="center">Expert</p>
-        <a href="https://github.com/juniorjrjl">
-        <img src="https://avatars.githubusercontent.com/u/6619093?u=0afe982a654793dfc9e886acab8b417aa632f511&v=4" alt="@felipeAguiarCode"><br>
-      </a>
-    </td>
-    <td colspan="3">
-    <p>🎉 10y+ em desenvolvimento Backend (Principalmente com Java mas já atuei com Scala, Python, Kotlin).
-      <br/>
-     🌟 Desenvolvedor backend - CAJU
-      <br/>
-    👨‍💻 Foco em back-ends
-    </p>
-      <a 
-      href="https://www.linkedin.com/in/josé-luiz-abreu-cardoso-junior-18483872/" 
-      align="center">
-           <img 
-            align="center" 
-            alt="Material de Apoio" 
-            src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-            >
-        </a>
-        <a href="https://www.instagram.com/junior.jose.lz/" target="_blank">
-            <img 
-              align="center" 
-              alt="Instagram" 
-              src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
-            >
-        </a>
-    </td>
-  </tr>
-</thead>
-</table>
-<!--  -->
-
-<br/>
-<br/>
+# Barber Shop - Frontend
 
 ## 💻 Sobre o Projeto
 
-Vamos criar um projeto Angular para agendamento de atendimento em uma barbearia, vamos usar a lib do Material e assim explorar alguns conceitos do framework Angular
+Este é um projeto Angular para agendamento de atendimentos em uma barbearia. O objetivo é explorar conceitos do framework Angular, como consumo de APIs REST, comunicação com backend e componentização. Além disso, utilizamos a biblioteca Angular Material para estilização e criação de componentes.
 
-## 📚 Pré-requisitos de Habilidades e Níveis de Conhecimento
+## 📚 Pré-requisitos
 
-Antes de ingressar neste conteúdo, é necessário possuir conhecimento prévio nas seguintes áreas:
+Antes de iniciar, certifique-se de ter os seguintes conhecimentos:
 
-  - Javascript | Intermediário
-  - Typescript | Intermediário
-  - HTML | Intermediário
-  - CSS | Intermediário
-  - Docker | Básico (opcional)
-  - Docker Compose | Básico (opcional)
+- **JavaScript**: Intermediário
+- **TypeScript**: Intermediário
+- **HTML**: Intermediário
+- **CSS**: Intermediário
+- **Docker**: Básico (opcional)
+- **Docker Compose**: Básico (opcional)
 
-## 🛠️ Habilidades e Sub-habilidades que vamos aprender neste conteúdo
+## 🛠️ Tecnologias Utilizadas
 
-  - Frontend
-    - Consumo de Api Rest
-    - Comunicação com backend
-    - Componentização
+- **Angular**: Framework principal para desenvolvimento do frontend.
+- **Angular Material**: Biblioteca de componentes para estilização.
+- **SCSS**: Pré-processador CSS para estilização.
+- **Docker**: Para containerização (opcional).
 
 ## 🎯 Objetivos e Resultados Esperados
 
-Após a conclusão do curso/projeto, os estudantes estarão aptos a:
+Após a conclusão do projeto, você será capaz de:
 
-- Criar um projeto Angular.
-- Consumir API Rest.
-- Componentizar para reaproveitar e organizar o projeto
+- Criar um projeto Angular do zero.
+- Consumir APIs REST para comunicação com o backend.
+- Componentizar o código para melhorar a organização e reutilização.
 
-<!--START_SECTION:footer-->
+## 🚀 Como Executar o Projeto
 
-<br />
-<br />
+### Pré-requisitos
 
-<p align="center">
-  <a href="https://www.dio.me/" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/digitalinnovationone/template-github-trilha/main/.github/assets/footer.png" alt="banner"/>
-  </a>
-</p>
+- Node.js instalado (versão recomendada: 16 ou superior).
+- Angular CLI instalado globalmente.
+- Docker (opcional).
+
+### Passos
+
+1. Clone o repositório:
+
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd barber-shop-fe
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Execute o projeto em modo de desenvolvimento:
+
+   ```bash
+   ng serve
+   ```
+
+   O projeto estará disponível em `http://localhost:4200`.
+
+4. (Opcional) Para rodar com Docker:
+
+   ```bash
+   docker-compose up
+   ```
+
+## 📂 Estrutura do Projeto
+
+```plaintext
+barber-shop-fe/
+├── src/
+│   ├── app/
+│   │   ├── clients/        # Módulo para gerenciamento de clientes
+│   │   ├── commons/        # Componentes e utilitários comuns
+│   │   ├── schedules/      # Módulo para agendamento
+│   │   ├── services/       # Serviços para comunicação com APIs
+│   │   ├── app.component.* # Componente principal
+│   │   ├── app.routes.ts   # Configuração de rotas
+│   └── environments/       # Configurações de ambiente
+├── public/                 # Arquivos públicos (favicon, etc.)
+├── angular.json            # Configuração do Angular CLI
+├── package.json            # Dependências do projeto
+└── README.md               # Documentação do projeto
+```
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
+
